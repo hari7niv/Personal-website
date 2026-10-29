@@ -23,13 +23,17 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   body {
     overflow-x: hidden;
+    max-width: 100vw;
     background-color: var(--bg-ivory);
     color: var(--text-dark);
     letter-spacing: -0.011em;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 

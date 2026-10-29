@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-32 md:py-44 bg-[#E8E4D8] text-[#161817] relative">
+    <section id="certifications" className="py-20 sm:py-28 md:py-44 bg-[#E8E4D8] text-[#161817] relative">
       <div className="max-w-[1320px] mx-auto px-6 md:px-12">
         {/* Section Label */}
-        <div className="flex items-center gap-2 mb-12">
+        <div className="flex items-center gap-2 mb-8 md:mb-12">
           <span className="w-1.5 h-1.5 rounded-full bg-[#C7F36A]" />
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#686D68]">
             04 / CREDENTIALS & ACADEMICS
@@ -14,10 +14,10 @@ export default function Certifications() {
         </div>
 
         {/* Thin Dark-Green Divider */}
-        <div className="w-full h-[1px] bg-[#203B38]/20 mb-16" />
+        <div className="w-full h-[1px] bg-[#203B38]/20 mb-10 md:mb-16" />
 
         {/* Two Editorial Columns: Education on Left, Certifications on Right */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-14 lg:gap-20 mb-12 md:mb-20">
           {/* Left Column: Education */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,11 +98,11 @@ export default function Certifications() {
             VERIFIED BENCHMARKS
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {/* Strip 1: Pale Sage (#C9D8C3) */}
-            <div className="p-8 rounded-lg bg-[#C9D8C3] text-[#161817] flex flex-col justify-between">
-              <div className="text-5xl font-mono tracking-tight mb-2">
-                400+
+            <div className="p-6 sm:p-8 rounded-lg bg-[#C9D8C3] text-[#161817] flex flex-col justify-between">
+              <div className="text-4xl sm:text-5xl font-mono tracking-tight mb-2">
+                350+
               </div>
               <div className="text-xs font-semibold uppercase tracking-wider text-[#203B38]">
                 LeetCode Problems Solved
@@ -110,9 +110,9 @@ export default function Certifications() {
             </div>
 
             {/* Strip 2: Soft Sand / Warm Ivory (#F5F3EC) */}
-            <div className="p-8 rounded-lg bg-[#F5F3EC] text-[#161817] border border-[#161817]/10 flex flex-col justify-between">
-              <div className="text-5xl font-mono tracking-tight mb-2">
-                8.4
+            <div className="p-6 sm:p-8 rounded-lg bg-[#F5F3EC] text-[#161817] border border-[#161817]/10 flex flex-col justify-between">
+              <div className="text-4xl sm:text-5xl font-mono tracking-tight mb-2">
+                8.5
               </div>
               <div className="text-xs font-semibold uppercase tracking-wider text-[#686D68]">
                 Academic CGPA (B.Tech IT)
@@ -120,8 +120,8 @@ export default function Certifications() {
             </div>
 
             {/* Strip 3: Muted Teal (#496966) */}
-            <div className="p-8 rounded-lg bg-[#496966] text-[#F5F3EC] flex flex-col justify-between">
-              <div className="text-4xl font-mono tracking-tight mb-2 text-[#C7F36A]">
+            <div className="p-6 sm:p-8 rounded-lg bg-[#496966] text-[#F5F3EC] flex flex-col justify-between">
+              <div className="text-3xl sm:text-4xl font-mono tracking-tight mb-2 text-[#C7F36A]">
                 JDK 21
               </div>
               <div className="text-xs font-semibold uppercase tracking-wider text-[#C9D8C3]">

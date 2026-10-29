@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-32 md:py-44 bg-[#E8E4D8] text-[#161817] relative">
+    <section id="experience" className="py-20 sm:py-28 md:py-44 bg-[#E8E4D8] text-[#161817] relative">
       <div className="max-w-[1320px] mx-auto px-6 md:px-12">
         {/* Section Label */}
-        <div className="flex items-center gap-2 mb-12">
+        <div className="flex items-center gap-2 mb-8 md:mb-12">
           <span className="w-1.5 h-1.5 rounded-full bg-[#203B38]" />
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#686D68]">
             02 / EXPERIENCE
@@ -14,7 +14,7 @@ export default function Experience() {
         </div>
 
         {/* Thin Dark-Green Divider Above Content */}
-        <div className="w-full h-[1px] bg-[#203B38]/20 mb-16" />
+        <div className="w-full h-[1px] bg-[#203B38]/20 mb-10 md:mb-16" />
 
         {/* Experience Row */}
         <motion.div
@@ -22,11 +22,11 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start"
+          className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-16 items-start"
         >
           {/* Left: Large Year */}
           <div className="lg:col-span-4">
-            <span className="text-6xl sm:text-7xl md:text-8xl font-normal tracking-tight text-[#203B38]/25 font-mono">
+            <span className="text-5xl sm:text-7xl md:text-8xl font-normal tracking-tight text-[#203B38]/25 font-mono">
               2025
             </span>
           </div>
@@ -74,7 +74,7 @@ export default function Experience() {
         </motion.div>
 
         {/* Thin Dark-Green Bottom Divider */}
-        <div className="w-full h-[1px] bg-[#203B38]/20 mt-16" />
+        <div className="w-full h-[1px] bg-[#203B38]/20 mt-10 md:mt-16" />
       </div>
     </section>
   );

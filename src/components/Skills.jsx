@@ -22,10 +22,10 @@ const skillGroups = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-32 md:py-44 bg-[#F5F3EC] relative">
+    <section id="skills" className="py-20 sm:py-28 md:py-44 bg-[#F5F3EC] relative">
       <div className="max-w-[1320px] mx-auto px-6 md:px-12">
         {/* Section Label */}
-        <div className="flex items-center gap-2 mb-12">
+        <div className="flex items-center gap-2 mb-8 md:mb-12">
           <span className="w-1.5 h-1.5 rounded-full bg-[#C7F36A]" />
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#686D68]">
             03 / TECHNICAL SKILLS
@@ -33,10 +33,10 @@ export default function Skills() {
         </div>
 
         {/* Thin Sage Divider */}
-        <div className="w-full h-[1px] bg-[#C9D8C3] mb-16" />
+        <div className="w-full h-[1px] bg-[#C9D8C3] mb-10 md:mb-16" />
 
         {/* Typographic Groups Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 lg:gap-16">
           {skillGroups.map((group, index) => (
             <motion.div
               key={group.category}
@@ -46,16 +46,16 @@ export default function Skills() {
               transition={{ duration: 0.7, delay: index * 0.1 }}
               className="flex flex-col items-start"
             >
-              <div className="flex items-center gap-2 mb-6">
+              <div className="flex items-center gap-2 mb-4 sm:mb-6">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#C7F36A]" />
                 <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-[#203B38]">
                   {group.category}
                 </h3>
               </div>
 
-              <ul className="space-y-3">
+              <ul className="space-y-2.5 sm:space-y-3">
                 {group.items.map((skill) => (
-                  <li key={skill} className="text-lg text-[#161817] font-normal tracking-tight flex items-center gap-2">
+                  <li key={skill} className="text-base sm:text-lg text-[#161817] font-normal tracking-tight flex items-center gap-2">
                     <span className="w-1 h-1 rounded-full bg-[#C9D8C3]" />
                     <span>{skill}</span>
                   </li>
@@ -66,7 +66,7 @@ export default function Skills() {
         </div>
 
         {/* Thin Bottom Divider */}
-        <div className="w-full h-[1px] bg-[#161817]/10 mt-16" />
+        <div className="w-full h-[1px] bg-[#161817]/10 mt-12 md:mt-16" />
       </div>
     </section>
   );

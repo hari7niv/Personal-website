@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 md:py-48 bg-[#203B38] text-[#F5F3EC] relative overflow-hidden">
+    <section id="contact" className="py-20 sm:py-28 md:py-48 bg-[#203B38] text-[#F5F3EC] relative overflow-hidden">
       {/* Decorative Botanical Branch Fragment in Bottom-Right Corner */}
-      <div className="absolute right-0 bottom-0 w-80 h-80 opacity-20 pointer-events-none">
+      <div className="absolute right-0 bottom-0 w-64 h-64 sm:w-80 sm:h-80 opacity-20 pointer-events-none">
         <svg
           className="w-full h-full text-[#C7F36A]"
           viewBox="0 0 200 200"
@@ -34,7 +34,7 @@ export default function Contact() {
           className="flex flex-col items-start max-w-4xl"
         >
           {/* Section Label */}
-          <div className="flex items-center gap-2 mb-8">
+          <div className="flex items-center gap-2 mb-6 sm:mb-8">
             <span className="w-2 h-2 rounded-full bg-[#C7F36A] shadow-[0_0_8px_rgba(199,243,106,0.9)]" />
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C9D8C3]">
               05 / CONTACT
@@ -42,28 +42,28 @@ export default function Contact() {
           </div>
 
           {/* Headline */}
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-normal text-[#F5F3EC] tracking-[-0.02em] leading-[1.1] mb-8">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-normal text-[#F5F3EC] tracking-[-0.02em] leading-[1.12] sm:leading-[1.1] mb-6 sm:mb-8">
             Let's build <br />
             something meaningful.
           </h2>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-[#C9D8C3] font-normal leading-relaxed mb-12 max-w-2xl">
+          <p className="text-base sm:text-lg md:text-xl text-[#C9D8C3] font-normal leading-relaxed mb-8 sm:mb-12 max-w-2xl">
             Software engineering, backend systems, AI/ML and technically ambitious products.
           </p>
 
           {/* Direct Email Link */}
-          <div className="mb-12">
+          <div className="mb-8 sm:mb-12 max-w-full overflow-hidden">
             <a
               href="mailto:harinivedhanp@gmail.com"
-              className="text-2xl sm:text-3xl md:text-4xl font-normal text-[#C7F36A] hover:opacity-80 transition-opacity underline decoration-[#C7F36A]/30 underline-offset-8"
+              className="text-xl sm:text-3xl md:text-4xl font-normal text-[#C7F36A] hover:opacity-80 transition-opacity underline decoration-[#C7F36A]/30 underline-offset-8 break-all sm:break-normal"
             >
               harinivedhanp@gmail.com
             </a>
           </div>
 
           {/* Links Row */}
-          <div className="flex flex-wrap items-center gap-8 text-sm font-semibold tracking-wider text-[#F5F3EC] uppercase">
+          <div className="flex flex-wrap items-center gap-6 sm:gap-8 text-sm font-semibold tracking-wider text-[#F5F3EC] uppercase">
             <a
               href="https://github.com/hari7niv"
               target="_blank"

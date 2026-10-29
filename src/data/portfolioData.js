@@ -23,8 +23,8 @@ export const portfolioData = {
 
   stats: [
     { label: "Projects Completed", value: "6+", subtext: "Featured Systems" },
-    { label: "DSA Problems Solved", value: "350+", subtext: "LeetCode Benchmarks" },
-    { label: "Academic CGPA", value: "8.5", subtext: "B.Tech IT (Saveetha Engg)" },
+    { label: "DSA Problems Solved", value: "400+", subtext: "LeetCode Benchmarks" },
+    { label: "Academic CGPA", value: "8.4", subtext: "B.Tech IT (Saveetha Engg)" },
     { label: "Java SE 21 Developer", value: "JDK 21", subtext: "Oracle Certified Professional" }
   ],
 

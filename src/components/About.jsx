@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id="about" className="py-32 md:py-44 relative bg-[#F5F3EC] overflow-hidden">
+    <section id="about" className="py-20 sm:py-28 md:py-44 relative bg-[#F5F3EC] overflow-hidden">
       {/* Subtle Faint Sage Organic Motif (10-15% opacity) */}
       <div className="absolute -right-24 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[#C9D8C3]/20 blur-2xl pointer-events-none" />
 
       <div className="max-w-[1320px] mx-auto px-6 md:px-12 relative z-10">
         {/* Section Label */}
-        <div className="flex items-center gap-2 mb-12">
+        <div className="flex items-center gap-2 mb-8 md:mb-12">
           <span className="w-1.5 h-1.5 rounded-full bg-[#203B38]" />
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#686D68]">
             01 / ABOUT
@@ -17,9 +17,9 @@ export default function About() {
         </div>
 
         {/* Thin Sage Divider Above Content */}
-        <div className="w-full h-[1px] bg-[#C9D8C3] mb-16" />
+        <div className="w-full h-[1px] bg-[#C9D8C3] mb-10 md:mb-16" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-14 lg:gap-20">
           {/* Left Column: Heading & Paragraphs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

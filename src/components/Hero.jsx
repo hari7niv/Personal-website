@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative bg-[#F5F3EC] pt-44 pb-28 md:pt-52 md:pb-36 lg:pt-60 lg:pb-44 overflow-hidden">
-      <div className="max-w-[1320px] mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    <section id="home" className="relative bg-[#F5F3EC] pt-32 pb-20 sm:pt-40 sm:pb-28 md:pt-52 md:pb-36 lg:pt-60 lg:pb-44 overflow-hidden">
+      <div className="max-w-[1320px] mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-16 items-center">
         {/* Left 65% Content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,19 +21,19 @@ export default function Hero() {
           </div>
 
           {/* Large Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-normal tracking-[-0.03em] leading-[1.08] text-[#161817] mb-8 max-w-3xl">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[68px] font-normal tracking-[-0.03em] leading-[1.12] sm:leading-[1.08] text-[#161817] mb-6 sm:mb-8 max-w-3xl">
             Building software <br className="hidden sm:inline" />
             that scales beyond <br className="hidden sm:inline" />
             the demo.
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-[#686D68] font-normal max-w-xl leading-relaxed mb-10">
+          <p className="text-base sm:text-lg md:text-xl text-[#686D68] font-normal max-w-xl leading-relaxed mb-8 sm:mb-10">
             Software engineer focused on backend systems, AI/ML and full-stack products.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-wrap items-center gap-6 sm:gap-8">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-8">
             <a
               href="#projects"
               className="editorial-link text-xs uppercase tracking-widest text-[#161817] font-semibold group flex items-center gap-2"
@@ -64,7 +64,7 @@ export default function Hero() {
           transition={{ duration: 1.1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-4 flex justify-center lg:justify-end"
         >
-          <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 flex items-center justify-center">
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 flex items-center justify-center">
             {/* Muted Sage Organic Circle Backdrop */}
             <div className="absolute inset-0 rounded-full bg-[#C9D8C3] opacity-90 transition-transform duration-700 hover:scale-[1.02]" />
 

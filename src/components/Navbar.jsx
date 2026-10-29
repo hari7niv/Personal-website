@@ -25,8 +25,8 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#F5F3EC]/90 backdrop-blur-md border-b border-[#161817]/10 py-5'
-          : 'bg-transparent py-7'
+          ? 'bg-[#F5F3EC]/90 backdrop-blur-md border-b border-[#161817]/10 py-4 md:py-5'
+          : 'bg-transparent py-5 md:py-7'
       }`}
     >
       <div className="max-w-[1320px] mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -75,7 +75,7 @@ export default function Navbar() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-xs uppercase tracking-wider font-semibold text-[#161817]"
+          className="md:hidden text-xs uppercase tracking-wider font-semibold text-[#161817] px-3 py-1.5 rounded-full border border-[#161817]/15 bg-[#F5F3EC]/80 backdrop-blur-sm cursor-pointer transition-colors hover:bg-[#161817] hover:text-[#F5F3EC]"
           aria-label="Toggle Navigation"
         >
           {mobileMenuOpen ? 'Close' : 'Menu'}
@@ -90,7 +90,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden bg-[#F5F3EC] border-b border-[#161817]/10 px-6 py-6"
+            className="md:hidden bg-[#F5F3EC]/98 backdrop-blur-md border-b border-[#161817]/10 px-6 py-6 shadow-xl"
           >
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
