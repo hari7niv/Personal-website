@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-ivory: #F5F3EC;
+    --bg-sand: #E8E4D8;
+    --bg-forest: #203B38;
+    --bg-teal: #496966;
+    --sage: #C9D8C3;
+    --lime: #C7F36A;
+    --text-dark: #161817;
+    --text-muted: #686D68;
+    --border-color: rgba(22, 24, 23, 0.12);
+
+    --font-sans: 'Inter', 'Plus Jakarta Sans', -apple-system, sans-serif;
+    --font-serif: 'Newsreader', Georgia, serif;
+  }
+
+  html {
+    background-color: var(--bg-ivory);
+    color: var(--text-dark);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: var(--bg-ivory);
+    color: var(--text-dark);
+    letter-spacing: -0.011em;
+  }
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(22, 24, 23, 0.15);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-forest);
+}
+
+/* Editorial Typography & Utilities */
+.font-serif-editorial {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.editorial-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.editorial-link:hover {
+  opacity: 0.75;
+}
+
+.editorial-link-arrow {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-link:hover .editorial-link-arrow {
+  transform: translateX(4px);
+}
+
+/* Selection Highlight */
+::selection {
+  background: var(--lime);
+  color: var(--text-dark);
+}
+
+/* Modal Backdrop */
+.editorial-modal-backdrop {
+  background-color: rgba(22, 24, 23, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+/* Lenis Smooth Scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
