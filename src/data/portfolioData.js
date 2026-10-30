@@ -12,11 +12,11 @@ export const portfolioData = {
     githubUsername: "hari7niv",
     linkedin: "https://www.linkedin.com/in/hari-nivedhan-bb3041316/",
     linkedinUsername: "hari-nivedhan",
-    resumeUrl: "/Hari_Nivedhan_Resume.pdf",
+    resumeUrl: "https://drive.google.com/file/d/1LitHCE87HcG2DV-YHNEXTNIGcNowtW1U/view?usp=sharing",
     intro: "I build intelligent systems that solve real-world problems using machine learning, distributed systems, and clean engineering.",
     bioStory: [
       "I am an Information Technology student at Saveetha Engineering College with a strong foundation in core computer science, backend systems, and artificial intelligence.",
-      "With 350+ LeetCode problems solved and an Oracle Certified Professional Java SE 21 credential, I specialize in building RAG-style retrieval pipelines, LLM quantization & inference tooling, and high-throughput distributed systems with Spring Boot & Kafka.",
+      "With 400+ LeetCode problems solved and an Oracle Certified Professional Java SE 21 credential, I specialize in building RAG-style retrieval pipelines, LLM quantization & inference tooling, and high-throughput distributed systems with Spring Boot & Kafka.",
       "My practical experience includes building production-style full-stack features as a MERN Stack Intern at Skill First Labs, benchmarking LLM quantization techniques with PyTorch and bitsandbytes, and architecting distributed event-driven systems."
     ]
   },
@@ -32,7 +32,7 @@ export const portfolioData = {
     institution: "Saveetha Engineering College",
     location: "Thandalam, Chennai",
     degree: "B.Tech in Information Technology",
-    cgpa: "8.5",
+    cgpa: "8.4",
     duration: "2024 – 2028",
     coursework: [
       "Data Structures & Algorithms",
@@ -81,7 +81,7 @@ export const portfolioData = {
     {
       category: "Core CS",
       icon: "Cpu",
-      items: ["Data Structures & Algorithms (300+ LeetCode)", "Distributed Systems & Concurrency", "Object-Oriented Programming", "DBMS", "Operating Systems"]
+      items: ["Data Structures & Algorithms (400+ LeetCode)", "Distributed Systems & Concurrency", "Object-Oriented Programming", "DBMS", "Operating Systems"]
     }
   ],
 

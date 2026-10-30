@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { portfolioData } from '../data/portfolioData';
 
 export default function Contact() {
   return (
@@ -83,12 +84,13 @@ export default function Contact() {
               <span className="editorial-link-arrow">→</span>
             </a>
             <a
-              href="/Hari_Nivedhan_Resume.pdf"
-              download="Hari_Nivedhan_Resume.pdf"
+              href={portfolioData.personal.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="editorial-link hover:text-[#C7F36A] text-[#C7F36A]"
             >
               <span>Download Resume</span>
-              <span className="editorial-link-arrow">↓</span>
+              <span className="editorial-link-arrow">↗</span>
             </a>
           </div>
         </motion.div>

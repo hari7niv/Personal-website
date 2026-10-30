@@ -102,7 +102,7 @@ export default function Certifications() {
             {/* Strip 1: Pale Sage (#C9D8C3) */}
             <div className="p-6 sm:p-8 rounded-lg bg-[#C9D8C3] text-[#161817] flex flex-col justify-between">
               <div className="text-4xl sm:text-5xl font-mono tracking-tight mb-2">
-                350+
+                400+
               </div>
               <div className="text-xs font-semibold uppercase tracking-wider text-[#203B38]">
                 LeetCode Problems Solved
@@ -112,7 +112,7 @@ export default function Certifications() {
             {/* Strip 2: Soft Sand / Warm Ivory (#F5F3EC) */}
             <div className="p-6 sm:p-8 rounded-lg bg-[#F5F3EC] text-[#161817] border border-[#161817]/10 flex flex-col justify-between">
               <div className="text-4xl sm:text-5xl font-mono tracking-tight mb-2">
-                8.5
+                8.4
               </div>
               <div className="text-xs font-semibold uppercase tracking-wider text-[#686D68]">
                 Academic CGPA (B.Tech IT)

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { portfolioData } from '../data/portfolioData';
 
 const navItems = [
   { name: 'Work', href: '#projects' },
@@ -57,12 +58,13 @@ export default function Navbar() {
           {/* Status Indicator & Resume */}
           <div className="flex items-center gap-4">
             <a
-              href="/Hari_Nivedhan_Resume.pdf"
-              download="Hari_Nivedhan_Resume.pdf"
+              href={portfolioData.personal.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xs uppercase tracking-widest text-[#161817] hover:text-[#203B38] font-semibold border border-[#161817]/15 hover:border-[#161817]/40 px-3 py-1.5 rounded-full transition-colors flex items-center gap-1.5"
             >
               <span>Resume</span>
-              <span className="text-[10px]">↓</span>
+              <span className="text-[10px]">↗</span>
             </a>
 
             <div className="flex items-center gap-2 text-xs font-medium text-[#203B38]">
@@ -104,12 +106,14 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="/Hari_Nivedhan_Resume.pdf"
-                download="Hari_Nivedhan_Resume.pdf"
+                href={portfolioData.personal.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
                 className="text-base text-[#161817] font-medium flex items-center justify-between"
               >
                 <span>Download Resume</span>
-                <span className="text-sm">↓</span>
+                <span className="text-sm">↗</span>
               </a>
               <div className="pt-3 border-t border-[#161817]/10 flex items-center gap-2 text-xs text-[#203B38]">
                 <span className="w-2 h-2 rounded-full bg-[#C7F36A]" />
